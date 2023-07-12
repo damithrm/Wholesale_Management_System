@@ -1,0 +1,45 @@
+.sideButton {
+    -fx-background-color:  #003366;
+}
+
+.sideButton:hover {
+    -fx-background-color: #009d00;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.sideButton:pressed {
+    -fx-background-color: #009d00;
+    -fx-scale-y: 0.95;
+    -fx-scale-x: 0.95;
+}
+
+.sideButton:focused {
+    -fx-background-color: #009d00;
+}
+
+.sideButton:default {
+    -fx-background-color: #009d00;
+}
+.upUserName{
+	-fx-font-size: 30px;
+    -fx-text-background-color: gray;
+    -fx-font-weight:bold;
+}
+.ufUserLabel{
+	-fx-font-weight:200;
+  	-fx-font-size: 14px;
+  	-fx-text-background-color: #595959;
+
+}
+.uplable1{
+	-fx-font-size: 25px;
+    -fx-text-background-color: gray;
+    -fx-font-weight:bold;
+}
+.upButton{
+  	-fx-text-background-color: #4d0099;
+}
+
+.currencyAlign {
+    -fx-alignment: CENTER-RIGHT;
+}

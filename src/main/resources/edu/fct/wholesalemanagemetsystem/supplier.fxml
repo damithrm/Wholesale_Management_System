@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="815.0" prefWidth="1267.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fct.wholesalemanagemetsystem.controller.SupplierController">
+   <children>
+      <Pane focusTraversable="true" prefHeight="815.0" prefWidth="1267.0">
+         <children>
+            <JFXButton fx:id="btnNewSupplier" layoutX="68.0" layoutY="41.0" onAction="#btnLoadNewSupplier" style="-fx-background-radius: 10px;" styleClass="sideButton" stylesheets="@home.css" text="New Supplier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitWidth="25.0" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSearchSupplier" layoutX="305.0" layoutY="41.0" onAction="#btnLoadSearchSupplier" style="-fx-background-radius: 10px;" styleClass="sideButton" stylesheets="@home.css" text="Search Supplier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="25.0" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ScrollPane hbarPolicy="NEVER" layoutX="68.0" layoutY="127.0" prefHeight="622.0" prefWidth="1127.0">
+               <content>
+                  <AnchorPane fx:id="supplierPane" focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="1126.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

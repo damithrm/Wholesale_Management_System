@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1537.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fct.wholesalemanagemetsystem.controller.HomeController">
+   <children>
+      <Pane focusTraversable="true" prefHeight="864.0" prefWidth="1537.0">
+         <children>
+            <VBox layoutY="53.0" prefHeight="811.0" prefWidth="271.0" style="-fx-background-color: #002447;">
+               <children>
+                  <HBox prefHeight="116.0" prefWidth="271.0" style="-fx-background-color: #002447;">
+                     <children>
+                        <Pane prefHeight="116.0" prefWidth="271.0">
+                           <children>
+                              <ImageView fitWidth="60.0" layoutX="46.0" layoutY="20.0" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/user.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="lUsername" layoutX="112.0" layoutY="8.0" onMouseEntered="#OMCLoadUserPane" onMouseExited="#OMCLoadUserPane1" prefHeight="83.0" prefWidth="157.0" text="person" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane fx:id="userEditPane" layoutX="183.0" layoutY="54.0" onMouseExited="#OMCLoadUserPane1" onMouseMoved="#OMCLoadUserPane" prefHeight="68.0" prefWidth="86.0" style="-fx-background-color: #eeeeee;">
+                                 <children>
+                                    <JFXButton layoutY="2.0" onAction="#btnLoadUserProfile" prefHeight="21.0" prefWidth="86.0" text="User Profile">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton layoutY="34.0" onAction="#btnLoadNewUser" prefHeight="21.0" prefWidth="86.0" text="New user">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btnDashboard" alignment="BASELINE_LEFT" onAction="#btnLoadDashboard" prefHeight="76.0" prefWidth="282.0" styleClass="sideButton" stylesheets="@home.css" text=" Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="38.0" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPlaceOrder" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="92.0" onAction="#btnLordPlaceOrder" prefHeight="76.0" prefWidth="282.0" styleClass="sideButton" stylesheets="@home.css" text=" Place Order" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/placeOrder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnItem" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="168.0" onAction="#btnLordItem" prefHeight="76.0" prefWidth="282.0" styleClass="sideButton" stylesheets="@home.css" text=" Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/items.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCustomer" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="244.0" onAction="#btLordCustomer" prefHeight="76.0" prefWidth="282.0" styleClass="sideButton" stylesheets="@home.css" text=" Customer" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSupplier" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="168.0" onAction="#btnLordSupplier" prefHeight="76.0" prefWidth="282.0" styleClass="sideButton" stylesheets="@home.css" text=" Supplier" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/supplier.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPurchases" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="320.0" onAction="#btnLordPurchases" prefHeight="76.0" prefWidth="282.0" styleClass="sideButton" stylesheets="@home.css" text=" Purchase" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/purchases.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAccount" alignment="BASELINE_LEFT" disable="true" layoutX="10.0" layoutY="548.0" onAction="#btnLordAccount" prefHeight="76.0" prefWidth="282.0" styleClass="sideButton" stylesheets="@home.css" text=" Account" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitWidth="30.0" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/account.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Pane layoutX="-2.0" onMouseExited="#OMCLoadUserPane1" onMouseMoved="#OMCLoadUserPane" prefHeight="54.0" prefWidth="1544.0" style="-fx-background-color: #002447;">
+               <children>
+                  <JFXButton fx:id="btnLogout" alignment="TOP_LEFT" buttonType="RAISED" layoutX="1309.0" layoutY="12.0" onAction="#loginOut" prefHeight="22.0" prefWidth="86.0" style="-fx-background-color: green; -fx-background-radius: 30px; -fx-border-color: white; -fx-border-radius: 30px;" text="Log out" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitWidth="20.0" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label alignment="CENTER" layoutX="1.0" layoutY="-7.0" prefHeight="61.0" prefWidth="271.0" style="-fx-background-color: #002447;" text="WHOLESALE" textAlignment="CENTER" textFill="#00df13" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="1491.0" layoutY="8.0" onAction="#closeApplication" prefHeight="27.0" prefWidth="23.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@assets/closeBtn.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnMinimize" contentDisplay="GRAPHIC_ONLY" layoutX="1458.0" layoutY="8.0" onAction="#minimizeApplication" prefHeight="26.0" prefWidth="36.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@assets/minimizeBtn.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <ScrollPane hbarPolicy="NEVER" layoutX="271.0" layoutY="52.0" prefHeight="811.0" prefWidth="1267.0">
+              <content>
+                <AnchorPane fx:id="showPane" minHeight="0.0" minWidth="0.0" prefHeight="815.0" prefWidth="1267.0" />
+              </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

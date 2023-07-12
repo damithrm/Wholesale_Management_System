@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="622.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fct.wholesalemanagemetsystem.controller.ViewSupplierController">
+   <children>
+      <TableView fx:id="tableSupplierDetails" onSort="#showSupplierDetails" prefHeight="622.0" prefWidth="1127.0">
+         <columns>
+            <TableColumn fx:id="col1SupplierID" prefWidth="106.39999085664749" text="Supplier ID" />
+            <TableColumn fx:id="col2SupplierName" prefWidth="231.20005798339844" text="Supplier Name" />
+            <TableColumn fx:id="col3Brand" prefWidth="140.0" text="Brand" />
+            <TableColumn fx:id="col4TeleNumber" prefWidth="157.60003662109375" text="Telephone Number" />
+            <TableColumn fx:id="col5Email" prefWidth="245.5999755859375" text="Email" />
+            <TableColumn fx:id="col6BusinessAddress" prefWidth="242.39990234375" text="Business Address" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

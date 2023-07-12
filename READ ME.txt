@@ -1,0 +1,22 @@
+WholesaleManagement System
+
+
+echo "# WholesaleManagementSystem" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AshenJZ/WholesaleManagementSystem.git
+git push -u origin master
+…or push an existing repository from the command line
+git remote add origin https://github.com/AshenJZ/WholesaleManagementSystem.git
+git branch -M main
+git push -u origin master
+
+Branch test
+branch test 2
+
+master change
+
+test change
+Master change 2

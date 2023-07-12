@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="NewUserPane" prefHeight="463.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fct.wholesalemanagemetsystem.controller.NewUserController">
+   <children>
+      <Pane prefHeight="474.0" prefWidth="267.0" style="-fx-background-color: #4d0099;">
+         <children>
+            <ImageView fitHeight="170.0" fitWidth="168.0" layoutX="53.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/adduser.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="NULUserName" layoutX="66.0" layoutY="203.0" styleClass="upUserName" stylesheets="@home.css" text="New User" />
+         </children>
+      </Pane>
+      <Pane layoutX="267.0" prefHeight="474.0" prefWidth="432.0">
+         <children>
+            <Label layoutX="85.0" layoutY="273.0" styleClass="ufUserLabel" stylesheets="@home.css" text="Confirm password" />
+            <Label layoutX="85.0" layoutY="208.0" styleClass="ufUserLabel" stylesheets="@home.css" text="Password" />
+            <Label layoutX="85.0" layoutY="147.0" styleClass="ufUserLabel" stylesheets="@home.css" text=" User name" />
+            <TextField fx:id="NUTFUserName" layoutX="225.0" layoutY="144.0" style="-fx-background-color: #EEEEEE;" />
+            <Label layoutX="141.0" layoutY="49.0" prefHeight="17.0" prefWidth="169.0" styleClass="uplable1" stylesheets="@home.css" text="Add new user">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="114.0" layoutY="361.0" onAction="#NUBEditProfile" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #4d0099;" styleClass="upButton" stylesheets="@home.css" text="Add" textFill="WHITE" />
+            <JFXButton layoutX="289.0" layoutY="361.0" onAction="#closeNewUser" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #4d0099;" styleClass="upButton" stylesheets="@home.css" text="Close" textFill="WHITE" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="391.0" layoutY="4.0" onMouseClicked="#closeNewUser1">
+               <image>
+                  <Image url="@assets/closeBtn.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="354.0" layoutY="4.0" onMouseClicked="#minimizeEditProfile">
+               <image>
+                  <Image url="@assets/minimizeBtn.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="NUTFNewPassword" layoutX="225.0" layoutY="206.0" style="-fx-background-color: #EEEEEE;" stylesheets="@home.css" />
+            <PasswordField fx:id="NUTFConfirmPassword" layoutX="225.0" layoutY="271.0" style="-fx-background-color: #EEEEEE;" stylesheets="@home.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

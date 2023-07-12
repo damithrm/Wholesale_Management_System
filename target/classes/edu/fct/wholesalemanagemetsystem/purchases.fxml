@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="815.0" prefWidth="1267.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fct.wholesalemanagemetsystem.controller.PurchasesController">
+   <children>
+      <Pane fx:id="id" layoutX="71.0" layoutY="64.0" prefHeight="687.0" prefWidth="1125.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 15px;">
+         <children>
+            <Label layoutX="415.0" layoutY="14.0" prefHeight="53.0" prefWidth="295.0" text="Purchase Details">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="purchaseid" layoutX="616.0" layoutY="134.0" prefHeight="39.0" prefWidth="306.0" promptText="PurchaseID">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="generate" alignment="CENTER" layoutX="922.0" layoutY="134.0" onAction="#generate_id" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #003366;" text="Genarate" textFill="#d3cbcb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="save" alignment="CENTER" layoutX="53.0" layoutY="563.0" onAction="#add_purchase" prefHeight="51.0" prefWidth="164.0" style="-fx-background-color: #003366;" text="Save 1" textFill="#d3cbcb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="53.0" layoutY="202.0" prefHeight="67.0" prefWidth="1010.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <children>
+                  <Label fx:id="txtsupplierID" alignment="CENTER" layoutX="35.0" layoutY="20.0" prefHeight="28.0" prefWidth="130.0" text="Supplier ID">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Supplierid" layoutX="246.0" layoutY="13.0" prefHeight="25.0" prefWidth="190.0" promptText="Supplier ID">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="supplier_name" layoutX="564.0" layoutY="14.0" prefHeight="25.0" prefWidth="306.0" promptText="Person/Company">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="display" alignment="CENTER" layoutX="870.0" layoutY="14.0" onAction="#display_name" prefHeight="14.0" prefWidth="104.0" style="-fx-background-color: #003366;" text="Display" textFill="#d3cbcb">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <JFXButton fx:id="save1" alignment="CENTER" layoutX="251.0" layoutY="563.0" onAction="#add_purchasesame" prefHeight="51.0" prefWidth="164.0" style="-fx-background-color: #003366;" text="Save 2" textFill="#d3cbcb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="notice" alignment="CENTER" layoutX="582.0" layoutY="534.0" prefHeight="123.0" prefWidth="481.0" style="-fx-background-color: white; -fx-background-radius: 10px;" text="Click Save 2 Button to Add for Same Purchase ID" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutX="53.0" layoutY="294.0" prefHeight="216.0" prefWidth="1010.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <children>
+                  <Label fx:id="txtitemdescription" alignment="CENTER" layoutX="37.0" layoutY="28.0" prefHeight="28.0" prefWidth="153.0" text="Item Description">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtquantity" alignment="CENTER" layoutX="586.0" layoutY="81.0" prefHeight="28.0" prefWidth="171.0" text="Purchase Quantity">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="quantity" layoutX="784.0" layoutY="75.0" prefHeight="25.0" prefWidth="190.0" promptText="Quantity">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="txtunitprice" alignment="CENTER" layoutX="37.0" layoutY="88.0" prefHeight="28.0" prefWidth="96.0" text="Unit Price">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="unitprice" layoutX="245.0" layoutY="82.0" prefHeight="25.0" prefWidth="190.0" promptText="Unit Price">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="itemdescription" layoutX="245.0" layoutY="22.0" prefHeight="25.0" prefWidth="190.0" promptText="Item Description">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="txtbrand" alignment="CENTER" layoutX="555.0" layoutY="28.0" prefHeight="28.0" prefWidth="130.0" text="Brand">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="brand" layoutX="784.0" layoutY="22.0" prefHeight="25.0" prefWidth="190.0" promptText="Brand">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="realid2" alignment="CENTER" layoutX="37.0" layoutY="150.0" prefHeight="28.0" prefWidth="118.0" text="Purchase ID">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="realid" layoutX="245.0" layoutY="144.0" prefHeight="25.0" prefWidth="190.0" promptText="PurchaseID">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Separator layoutX="178.0" layoutY="78.0" prefHeight="3.0" prefWidth="761.0" />
+            <Label layoutX="778.0" layoutY="550.0" text="!!NOTICE!!" textFill="#f70000">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="342.0" layoutY="662.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="342.0" layoutY="730.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

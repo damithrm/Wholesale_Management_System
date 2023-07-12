@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fct.wholesalemanagemetsystem.controller.LoginController">
+   <children>
+      <ImageView fitHeight="409.0" fitWidth="604.0" layoutX="-101.0" layoutY="99.0" preserveRatio="true" rotate="270.0">
+         <image>
+            <Image url="@assets/rice.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="451.0" layoutY="80.0" prefHeight="440.0" prefWidth="515.0" style="-fx-background-color: white; -fx-background-radius: 15px;">
+         <children>
+            <Label layoutX="202.0" layoutY="55.0" text="LOGIN">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfUsername" focusTraversable="false" layoutX="83.0" layoutY="166.0" prefHeight="45.0" prefWidth="350.0" promptText="UserName" style="-fx-background-color: #EEEEEE;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pfPassword" focusTraversable="false" layoutX="83.0" layoutY="231.0" onAction="#logIntoSystem" prefHeight="45.0" prefWidth="350.0" promptText="Password" style="-fx-background-color: #EEEEEE;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="btnLogin" layoutX="83.0" layoutY="295.0" onAction="#logIntoSystem" prefHeight="45.0" prefWidth="350.0" style="-fx-background-color: #24529f;" text="Log in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnClose" alignment="BASELINE_LEFT" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="950.0" onAction="#closeApplication" prefHeight="30.0" prefWidth="24.0" ripplerFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView accessibleRole="BUTTON" fitWidth="40.0" onMousePressed="#closeApplication" preserveRatio="true">
+               <image>
+                  <Image url="@assets/closeBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
